@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | Loving Homes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+</head>
+<body class="contact-page-body">
+
+  <header class="main-header">
+    <div class="container">
+        <a href="index.html" class="logo">Loving <span>Homes</span></a>
+        
+        <nav>
+            <ul>
+<li><a href="index.html">الرئيسية</a></li>
+<li><a href="rooms.html">الغرف</a></li>
+<li><a href="grooming.html">الحلاقة والمنتجع</a></li>
+<li><a href="vet.html">الخدمات البيطرية</a></li>
+<li><a href="activities.html">الأنشطة الخارجية</a></li>
+<li><a href="packages.html">الحزم</a></li>
+<li><a href="contact.html">اتصل بنا</a></li>
+</ul>
+
+            <div class="nav-tools">
+                <button onclick="changeFontSize('increase')" title="تكبير الخط">A+</button>
+                <button onclick="changeFontSize('decrease')" title="تصغير الخط">A-</button>
+                <button onclick="speakText()" title="قراءة النص"><i class="fas fa-volume-up"></i></button>
+                <select id="lang-switch" onchange="switchLanguage()">
+                    <option value="ar">AR</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+        </nav>
+        
+        
+    </div>
+</header>
+
+    <div class="form-container">
+        <h2>تفاصيل الاتصال</h2>
+        <p class="form-subtitle">أدخل التفاصيل الخاصة بك لتلقي النشرة الإخبارية الشهرية</p>
+        
+        <form>
+            <div class="form-group-custom">
+                <label>الاسم الأول:</label>
+                <input type="text" required>
+            </div>
+            <div class="form-group-custom">
+                <label>اسم العائلة:</label>
+                <input type="text" required>
+            </div>
+            <div class="form-group-custom">
+                <label>النوع:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender"> ذكر</label>
+                    <label><input type="radio" name="gender"> أنثى</label>
+                </div>
+            </div>
+            <div class="form-group-custom">
+                <label>كيف تود أن تصلك رسائلنا؟</label>
+                <div class="check-group">
+                    <label><input type="checkbox"> عبر البريد الإلكتروني</label>
+                    <label><input type="checkbox"> عن طريق الهاتف</label>
+                    <label><input type="checkbox"> عن طريق البريد</label>
+                </div>
+            </div>
+            <div class="form-group-custom">
+                <label>رسالتك:</label>
+                <textarea placeholder="اكتب رسالتك هنا..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit-blue">إرسال</button>
+        </form>
+    </div>
+<footer class="main-footer">
+    <div class="container">
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            </a>
+            <a href="https://wa.me/yournumber" target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p>&copy; 2026 فندق لوفينغ هومز - هونج كونج. جميع الحقوق محفوظة.</p>
+    </div>
+</footer>
+<script src="script.js">
+    
+</script>
+
+<div class="accessibility-bar">
+    <div class="container">
+        <div class="acc-tools">
+    
+    </div>
+</div>
+</body>
+</html>

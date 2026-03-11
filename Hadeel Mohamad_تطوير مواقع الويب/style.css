@@ -1,0 +1,797 @@
+/* ================================= */
+/* 1. التنسيقات العامة */
+/* ================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+/* ================================= */
+/* 2. الهيدر المطور (بدون زر احجز الآن) */
+/* ================================= */
+.main-header {
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.logo span {
+    color: #e67e22;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 12px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #e67e22;
+}
+
+/* === القائمة المنسدلة (Dropdown) للمرافق === */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    min-width: 200px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 10px 0;
+    z-index: 1001;
+    border-top: 3px solid #e67e22;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    padding: 10px 20px;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dropdown-menu li a:hover {
+    background: #fdf2e9;
+    color: #e67e22;
+}
+
+/* ================================= */
+/* 3. ترويسة الصفحات الفرعية */
+/* ================================= */
+.page-header {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* ================================= */
+/* 4. قسم Hero (الصفحة الرئيسية) */
+/* ================================= */
+.hero {
+    height: 75vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* ================================= */
+/* 5. الأزرار العامة */
+/* ================================= */
+.btn-main, .btn-secondary {
+    display: inline-block;
+    padding: 12px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+    min-width: 180px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-main {
+    background: #e67e22;
+    color: #fff;
+    border: 2px solid #e67e22;
+}
+
+.btn-main:hover {
+    background: #d35400;
+    border-color: #d35400;
+}
+
+.btn-secondary {
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+}
+
+.btn-secondary:hover {
+    background: #fff;
+    color: #333;
+}
+
+/* ================================= */
+/* 6. شبكة المرافق والكروت */
+/* ================================= */
+.services { padding: 50px 0; }
+.section-title { text-align: center; margin-bottom: 40px; font-size: 32px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover { transform: translateY(-5px); }
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* ================================= */
+/* 7. قسم الحزم والأسعار */
+/* ================================= */
+.pricing-grid { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+
+.price-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.price-card.featured {
+    border: 2px solid #e67e22;
+    transform: scale(1.05);
+}
+
+.tag {
+    position: absolute;
+    top: -12px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e67e22; 
+    color: #fff; 
+    padding: 5px 15px;
+    border-radius: 20px; 
+    font-size: 12px;
+}
+
+.price { 
+    font-size: 24px;
+    color: #e67e22;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.price-card ul { 
+    list-style: none; 
+    margin-bottom: 25px; 
+    text-align: right; 
+}
+
+.price-card ul li { 
+    padding: 8px 0; 
+    border-bottom: 1px solid #eee; 
+}
+
+/* ================================= */
+/* 8. صفحة اتصل بنا */
+/* ================================= */
+.form-container {
+    background: #fff;
+    max-width: 550px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.form-group-custom { margin-bottom: 20px; text-align: right; }
+.form-group-custom label { display: block; font-weight: bold; margin-bottom: 8px; }
+
+.form-group-custom input, .form-group-custom textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* ================================= */
+/* 9. الفوتر الثابت */
+/* ================================= */
+.main-footer {
+    background: #2c3e50;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.social-links {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.social-links .facebook { background: #1877f2; }
+.social-links .instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); }
+.social-links .whatsapp { background: #25D366; }
+
+/* ================================= */
+/* 10. أدوات الوصول */
+/* ================================= */
+.nav-tools {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-right: 2px solid #eee;
+    padding-right: 15px;
+    margin-right: 5px;
+}
+
+.nav-tools button {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #555;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-tools button:hover {
+    background: #e67e22;
+    color: #fff;
+}
+
+.nav-tools button[onclick="stopSpeaking()"] {
+    color: #e74c3c;
+}
+
+.nav-tools button[onclick="stopSpeaking()"]:hover {
+    background-color: #e74c3c;
+}
+
+#lang-switch {
+    padding: 6px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-weight: bold;
+}
+
+/* ================================= */
+/* 11. التجاوب مع الموبايل */
+/* ================================= */
+@media (max-width: 992px) {
+    .main-header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-tools {
+        border-right: none;
+        padding-right: 0;
+        margin-top: 10px;
+    }
+}
+/* --- إصلاح شريط التنقل ليظهر بشكل أفقي ومرتب --- */
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; /* يمنع نزول العناصر لسطر جديد */
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* مسافة متساوية بين الروابط */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- إعادة الستايل المفقود للأزرار في جميع الصفحات --- */
+.btn-main {
+    background-color: #e67e22 !important; /* اللون البرتقالي من اللوجو */
+    color: #fff !important;
+    padding: 10px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+    box-shadow: 0 4px 10px rgba(230, 126, 34, 0.2);
+    text-align: center;
+}
+
+.btn-main:hover {
+    background-color: #d35400 !important;
+    transform: translateY(-2px);
+}
+
+/* --- تنسيق أدوات الوصول لتكون في طرف الشريط --- */
+.nav-tools {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.nav-tools button {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* تنسيق قوائم الاختيار داخل النموذج */
+.form-select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-family: 'Cairo', sans-serif;
+    font-size: 15px;
+    color: #333;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: 0.3s;
+}
+
+.form-select:focus {
+    border-color: #e67e22;
+    outline: none;
+    box-shadow: 0 0 5px rgba(230, 126, 34, 0.2);
+}
+
+.form-group-custom label i {
+    color: #e67e22; /* تلوين الأيقونات بجانب العناوين بالبرتقالي */
+    margin-left: 8px;
+}
+/* تنسيق قسم النبذة والفيديو */
+.about-section {
+    padding: 60px 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-right: 5px solid #e67e22;
+    padding-right: 15px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #555;
+}
+
+.check-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.check-list li {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.check-list i {
+    color: #e67e22;
+    margin-left: 10px;
+}
+
+/* تنسيق حاوية الفيديو لتكون متجاوبة */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* نسبة 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* التجاوب مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* تنسيق رأس الصفحة بصورة خلفية بدلاً من السواد */
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=1600'); /* رابط صورة كلب */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); /* لجعل الخط واضحاً فوق الصورة */
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+/* تنسيق صفحة اتصل بنا */
+.contact-page-body {
+    background-color: #f8f9fa;
+}
+
+/* صورة الهيدر الخاصة بالتواصل */
+.contact-header {
+    background-image: url('https://images.unsplash.com/photo-1583511655826-05700d52f4d9?q=80&w=1600'); /* صورة كلب مع هاتف أو تواصل */
+}
+
+.contact-card {
+    max-width: 700px;
+    margin: -50px auto 50px; /* سحب النموذج للأعلى قليلاً فوق الصورة */
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.contact-card h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+/* تقسيم الاسم الأول والعائلة في سطر واحد */
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group-custom {
+    flex: 1;
+}
+
+.form-group-custom {
+    margin-bottom: 20px;
+}
+
+.form-group-custom label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+.form-group-custom input[type="text"],
+.form-group-custom textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Cairo', sans-serif;
+    transition: 0.3s;
+}
+
+.form-group-custom input:focus,
+.form-group-custom textarea:focus {
+    border-color: #e67e22;
+    outline: none;
+    box-shadow: 0 0 5px rgba(230, 126, 34, 0.2);
+}
+
+.form-group-custom textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* تنسيق الخيارات (راديو وتشيك بوكس) */
+.radio-group, .check-group {
+    display: flex;
+    gap: 20px;
+    background: #fdfdfd;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px dashed #ddd;
+}
+
+.radio-group label, .check-group label {
+    font-weight: normal;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* زر الإرسال البرتقالي */
+.btn-submit-orange {
+    width: 100%;
+    padding: 15px;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit-orange:hover {
+    background-color: #d35400;
+    transform: translateY(-2px);
+}
+
+/* التجاوب مع الموبايل */
+@media (max-width: 600px) {
+    .form-row { flex-direction: column; gap: 0; }
+    .contact-card { margin-top: 20px; padding: 20px; width: 90%; }
+}
+/* تنسيق الصفحة العام */
+.booking-page-body {
+    background-color: #f4f7f6;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* تنسيق هيدر الصفحة (الخلفية الداكنة) */
+.page-header {
+    background-color: #2c3e50; /* نفس اللون الداكن في الصورة */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* حاوية النموذج (البطاقة البيضاء) */
+.form-container {
+    max-width: 600px;
+    margin: -40px auto 50px; /* سحب النموذج للأعلى ليتداخل مع الهيدر */
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق المجموعات داخل النموذج */
+.form-group-custom {
+    margin-bottom: 25px;
+    text-align: right;
+}
+
+.form-group-custom label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.form-group-custom label i {
+    margin-left: 8px;
+    color: #e67e22; /* لون الأيقونات البرتقالي */
+}
+
+/* تنسيق الحقول والقوائم المنسدلة */
+.form-group-custom input[type="text"],
+.form-group-custom select,
+.form-group-custom textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    background-color: #fcfcfc;
+    font-family: 'Cairo', sans-serif;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+/* تأثير عند الضغط على الحقل */
+.form-group-custom input:focus,
+.form-group-custom select:focus,
+.form-group-custom textarea:focus {
+    border-color: #e67e22;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(230, 126, 34, 0.2);
+}
+
+/* تنسيق منطقة الملاحظات */
+.form-group-custom textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* زر إرسال طلب الحجز */
+.btn-submit-blue {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffffff;
+    color: #2c3e50;
+    border: 1px solid #2c3e50;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-submit-blue:hover {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* تنسيق الفوتر */
+.main-footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
