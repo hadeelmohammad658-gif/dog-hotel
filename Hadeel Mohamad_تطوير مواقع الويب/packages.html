@@ -3,106 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الحزم والأسعار | Loving Homes</title>
+    <title>الحزم والأسعار | لوفينغ هومز - Loving Homes</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-<header class="main-header">
-    <div class="container">
-        <a href="index.html" class="logo">Loving <span>Homes</span></a>
+<header class="الرئيسي">
+    <div class="إطارالمحتوى">
+        <a href="index.html" class="الشعار">Loving <span>Homes</span></a>
         
-        <nav>
-           <ul>
-                   <li><a href="index.html">الرئيسية</a></li>
-                  <li><a href="rooms.html">الغرف</a></li>
-                  <li><a href="grooming.html">الحلاقة والمنتجع</a></li>
-                  <li><a href="vet.html">الخدمات البيطرية</a></li>
-                  <li><a href="activities.html">الأنشطة الخارجية</a></li>
-                  <li><a href="packages.html">الحزم</a></li>
-                   <li><a href="contact.html">اتصل بنا</a></li>
+         <nav>
+            <ul class="قائمةالتنقل">
+                <li><a href="index.html" class="رابط-نشط">الرئيسية</a></li>
+                <li><a href="rooms.html">الغرف</a></li>
+                <li><a href="grooming.html">الحلاقة والمنتجع</a></li>
+                <li><a href="vet.html">الخدمات البيطرية</a></li>
+                <li><a href="activities.html">الأنشطة الخارجية</a></li>
+                <li><a href="packages.html">الحزم</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
             </ul>
-            <div class="nav-tools">
+            <div class="أيقونةالهاتف"> ☰ </div>
+            
+        <div class="أدوات-الوصول">
                 <button onclick="changeFontSize('increase')" title="تكبير">A+</button>
                 <button onclick="changeFontSize('decrease')" title="تصغير">A-</button>
                 <button onclick="speakText()" title="استمع"><i class="fas fa-volume-up"></i></button>
                 <button onclick="stopSpeaking()" title="كتم"><i class="fas fa-volume-mute"></i></button>
-                <select id="lang-switch" onchange="switchLanguage()">
-                    <option value="ar">AR</option>
-                    <option value="en">EN</option>
-                </select>
             </div>
         </nav>
     </div>
 </header>
 
-<section class="page-header">
-    <h1>حزم الإقامة والخدمات</h1>
-    <p>باقات مصممة خصيصاً لتناسب احتياجات وميزانية كل عميل</p>
-</section>
-
-<section class="packages container">
-    <div class="pricing-grid">
-        
-        <div class="price-card featured">
-            <div class="tag">الباقة الفاخرة</div>
-            <div class="card-header">الحزمة المميزة</div>
-            <div class="price">VIP Suite</div>
-            <ul>
-                <li>المشي 4 مرات / 4 أنشطة يومياً</li>
-                <li>مساحة عشب خاصة للأليف</li>
-                <li>تحديثات وصور يومية للمالك</li>
-                <li>مكافآت (حسب اتفاق المالك)</li>
-            </ul>
-            <a href="booking.html" class="btn-main">احجز الآن</a>
-        </div>
-
-        <div class="price-card">
-            <div class="card-header">الحزمة الكلاسيكية</div>
-            <div class="price">Standard</div>
-            <ul>
-                <li>المشي 3 مرات / 3 أنشطة يومياً</li>
-                <li>حظيرة لعب داخلية مجهزة</li>
-                <li>منطقة مخصصة للاسترخاء</li>
-                <li>جلسة حلاقة وتنظيف شاملة</li>
-            </ul>
-            <a href="booking.html" class="btn-main">احجز الآن</a>
-        </div>
-
-        <div class="price-card">
-            <div class="card-header">حزمة اليوم</div>
-            <div class="price">Day Care</div>
-            <ul>
-                <li>المشي مرتين يومياً</li>
-                <li>منطقة لعب خارجية واسعة</li>
-                <li>استخدام مسار الرشاقة (Agility)</li>
-                <li>نشاط حفر حفرة في الرمل</li>
-            </ul>
-            <a href="booking.html" class="btn-main">احجز الآن</a>
-        </div>
-
-    </div>
-
-    <section class="custom-package-info">
-        <h3>هل تحتاج إلى ترتيبات خاصة؟</h3>
-        <p>تتوفر لدينا <strong>حزم مخصصة</strong> للإقامات الطويلة أو للكلاب ذات المتطلبات الإضافية.</p>
-        <p>يجب على العملاء <strong>الاتصال بالشركة</strong> لترتيب أي حزمة مخصصة تناسب احتياجات أليفهم تماماً.</p>
-        <div style="margin-top: 25px;">
-            <a href="booking.html" class="btn-main">اطلب استشارة مجانية</a>
-        </div>
+<main>
+    <section class="عنوان-الصفحة">
+        <h1>حزم الإقامة والخدمات</h1>
+        <p>باقات مصممة خصيصاً لتناسب احتياجات وميزانية كل عميل</p>
     </section>
-</section>
 
-<footer class="main-footer">
-    <div class="container">
-        <div class="social-links">
-            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+    <section class="الباقات الحاوية">
+        <div class="شبكة-التسعير">
+            
+            <div class="بطاقة-سعر باقة-مميزة">
+                <div class="وسام">الباقة الفاخرة</div>
+                <div class="رأس-البطاقة"><h3>الحزمة المميزة</h3></div>
+                <div class="فئة-السعر">VIP Suite</div>
+                <ul class="قائمة-المزايا">
+                    <li><i class="fas fa-check"></i> المشي 4 مرات / 4 أنشطة يومياً</li>
+                    <li><i class="fas fa-check"></i> مساحة عشب خاصة للأليف</li>
+                    <li><i class="fas fa-check"></i> تحديثات وصور يومية للمالك</li>
+                    <li><i class="fas fa-check"></i> مكافآت (حسب اتفاق المالك)</li>
+                </ul>
+            </div>
+
+            <div class="بطاقة-سعر">
+                <div class="رأس-البطاقة"><h3>الحزمة الكلاسيكية</h3></div>
+                <div class="فئة-السعر">Standard</div>
+                <ul class="قائمة-المزايا">
+                    <li><i class="fas fa-check"></i> المشي 3 مرات / 3 أنشطة يومياً</li>
+                    <li><i class="fas fa-check"></i> حظيرة لعب داخلية مجهزة</li>
+                    <li><i class="fas fa-check"></i> منطقة مخصصة للاسترخاء</li>
+                    <li><i class="fas fa-check"></i> جلسة حلاقة وتنظيف شاملة</li>
+                </ul>
+            </div>
+
+            <div class="بطاقة-سعر">
+                <div class="رأس-البطاقة"><h3>حزمة اليوم</h3></div>
+                <div class="فئة-السعر">Day Care</div>
+                <ul class="قائمة-المزايا">
+                    <li><i class="fas fa-check"></i> المشي مرتين يومياً</li>
+                    <li><i class="fas fa-check"></i> منطقة لعب خارجية واسعة</li>
+                    <li><i class="fas fa-check"></i> مسار الرشاقة (Agility)</li>
+                    <li><i class="fas fa-check"></i> نشاط حفر حفرة في الرمل</li>
+                </ul>
+               <div class="أيقونةالهاتف" id="hamburger-btn"> ☰ </div>            
+
+            </div>
+
         </div>
-        <p>&copy; 2026 فندق لوفينغ هومز - هونج كونج. جميع الحقوق محفوظة.</p>
+
+        <section class="معلومات-الحزمة-المخصصة">
+            <h3>هل تحتاج إلى ترتيبات خاصة لي الحزم مخصصةاتصل بنا؟</h3>
+            <p>تتوفر لدينا <strong>حزم مخصصة</strong> للإقامات الطويلة أو للكلاب ذات المتطلبات الإضافية.</p>
+            <p>نحن نؤمن بأن كل كلب حالة فريدة؛ اتصل بنا لترتيب ما يناسب أليفك تماماً.</p>
+            <div class="أزرار-الإجراء">
+                <a href="contact.html" class="زر-رئيسي">اتصل بنالي طلب استش</a>
+            </div>
+        </section>
+    </section>
+</main>
+
+<footer class="التذييل-الرئيسي">
+    <div class="إطار-المحتوى">
+        <div class="روابط-التواصل">
+    <a href="https://www.facebook.com/LovingHomes" target="_blank" class="فيسبوك">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    
+    <a href="https://www.instagram.com/LovingHomes" target="_blank" class="إنستغرام">
+        <i class="fab fa-instagram"></i>
+    </a>
+    
+    <a href="https://wa.me/962700000000" target="_blank" class="واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+        <p>© 2026 فندق لوفينغ هومز - هونج كونج. جميع الحقوق محفوظة.</p>
     </div>
 </footer>
 

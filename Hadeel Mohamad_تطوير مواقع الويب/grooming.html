@@ -1,92 +1,108 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>صالة الحلاقة والمنتجع | Loving Homes</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صالة الحلاقة والمنتجع | لوفينغ هومز - Loving Homes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-<header class="main-header">
-<div class="container">
-<a href="index.html" class="logo">Loving <span>Homes</span></a>
-<nav>
-<ul>
-<li><a href="index.html">الرئيسية</a></li>
-<li><a href="rooms.html">الغرف</a></li>
-<li><a href="grooming.html">الحلاقة والمنتجع</a></li>
-<li><a href="vet.html">الخدمات البيطرية</a></li>
-<li><a href="activities.html">الأنشطة الخارجية</a></li>
-<li><a href="packages.html">الحزم</a></li>
-<li><a href="contact.html">اتصل بنا</a></li>
-</ul>
-   <div class="nav-tools">
-    <button onclick="changeFontSize('increase')" title="تكبير الخط">A+</button>
-    <button onclick="changeFontSize('decrease')" title="تصغير الخط">A-</button>
-    <button onclick="speakText()" title="قراءة النص"><i class="fas fa-volume-up"></i></button>
-    <button onclick="stopSpeaking()" title="كتم الصوت" style="color: #e74c3c; border-color: #e74c3c;">
-        <i class="fas fa-volume-mute"></i>
-    </button>
-</nav>
-</div>
+<header class="الرئيسي">
+    <div class="إطارالمحتوى">
+        <a href="index.html" class="الشعار">Loving <span>Homes</span></a>
+         <nav>
+            <ul class="قائمةالتنقل">
+                <li><a href="index.html" class="رابط-نشط">الرئيسية</a></li>
+                <li><a href="rooms.html">الغرف</a></li>
+                <li><a href="grooming.html">الحلاقة والمنتجع</a></li>
+                <li><a href="vet.html">الخدمات البيطرية</a></li>
+                <li><a href="activities.html">الأنشطة الخارجية</a></li>
+                <li><a href="packages.html">الحزم</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+               <div class="أيقونةالهاتف" id="hamburger-btn"> ☰ </div>            
+            
+           <div class="أدوات-الوصول">
+                <button onclick="changeFontSize('increase')" title="تكبير">A+</button>
+                <button onclick="changeFontSize('decrease')" title="تصغير">A-</button>
+                <button onclick="speakText()" title="استمع"><i class="fas fa-volume-up"></i></button>
+                <button onclick="stopSpeaking()" title="كتم"><i class="fas fa-volume-mute"></i></button>
+            </div>
+        </nav>
+    </div>
 </header>
 
-<section class="page-header">
-<h1>صالة الحلاقة والمنتجع</h1>
-<p>خدمات العناية الكاملة للحفاظ على نظافة وجمال كلبك</p>
-</section>
+<main>
+    <section class="عنوان-الصفحة">
+        <h1>صالة الحلاقة والمنتجع</h1>
+        <p>خدمات العناية الكاملة للحفاظ على نظافة وجمال أليفك</p>
+    </section>
 
-<section class="services container">
-<div class="grid">
+    <section class="الخدمات ">
+        <div class="شبكة-العرض">
 
-<div class="card">
-<img src="C:\Users\User\Desktop\Hadeel Mohamad_تطوير مواقع الويب\images\Screenshot 2026-03-09 095616.png">
-<h3>الحلاقة الاحترافية</h3>
-<p>خدمة حلاقة باستخدام أدوات آمنة ومناسبة لكلاب جميع الأحجام، مع إمكانية اختيار نمط الشعر المطلوب.</p>
-<p><strong>السعر: 40$ / الجلسة</strong></p>
-</div>
+            <div class="بطاقة-خدمة">
+                <div class="إطار-الصورة">
+                    <img src="images/Screenshot 2026-03-09 095616.png" alt="الحلاقة الاحترافية للكلاب">
+                </div>
+                <h3>الحلاقة الاحترافية</h3>
+                <p>خدمة حلاقة باستخدام أدوات آمنة ومناسبة لجميع الأحجام، مع اختيار النمط الذي تفضله لأليفك.</p>
+                <span class="السعر">40$ / الجلسة</span>
+            </div>
 
-<div class="card">
-<img src="C:\Users\User\Desktop\Hadeel Mohamad_تطوير مواقع الويب\images\Screenshot 2026-03-09 095506.png">
-<h3>جلسات الاستحمام والتنظيف</h3>
-<p>حمام كامل مع شامبو وعلاجات خاصة للحفاظ على صحة الفراء ورائحة منعشة للكلاب.</p>
-<p><strong>السعر: 30$ / الجلسة</strong></p>
-</div>
+            <div class="بطاقة-خدمة">
+                <div class="إطار-الصورة">
+                    <img src="images/Screenshot 2026-03-09 095506.png" alt="جلسات الاستحمام">
+                </div>
+                <h3>الاستحمام والتنظيف</h3>
+                <p>حمام كامل باستخدام أنواع شامبو وعلاجات مخصصة للحفاظ على لمعان الفراء ورائحة منعشة.</p>
+                <span class="السعر">30$ / الجلسة</span>
+            </div>
 
-<div class="card">
-<img src="C:\Users\User\Desktop\Hadeel Mohamad_تطوير مواقع الويب\images\Screenshot 2026-03-11 112449.png">
-<h3>المنتجع والاسترخاء</h3>
-<p>منطقة للاسترخاء بعد جلسة العناية، مع موسيقى هادئة وإضاءة مريحة للكلاب.</p>
-<p><strong>السعر: 25$ / الجلسة</strong></p>
-</div>
+            <div class="بطاقة-خدمة">
+                <div class="إطار-الصورة">
+                    <img src="images/Screenshot 2026-03-11 112449.png" alt="منتجع الكلاب">
+                </div>
+                <h3>الاسترخاء والمنتجع</h3>
+                <p>مساحة هادئة للاسترخاء بعد العناية، مع موسيقى مهدئة وإضاءة مريحة لتقليل توتر الأليف.</p>
+                <span class="السعر">25$ / الجلسة</span>
+            </div>
 
-<div class="card">
-<img src="C:\Users\User\Desktop\Hadeel Mohamad_تطوير مواقع الويب\images\Screenshot 2026-03-11 111958.png">
-<h3>تنظيف الأظافر والعناية بالأذن</h3>
-<p>خدمة احترافية لتنظيف الأظافر والأذن، مع مراجعة أي مشاكل صحية بسيطة في هذه المناطق.</p>
-<p><strong>السعر: 20$ / الجلسة</strong></p>
-</div>
+            <div class="بطاقة-خدمة">
+                <div class="إطار-الصورة">
+                    <img src="images/Screenshot 2026-03-11 111958.png" alt="عناية الأظافر والأذن">
+                </div>
+                <h3>العناية بالأظافر والأذن</h3>
+                <p>تقليم احترافي للأظافر وتنظيف دقيق للأذنين لضمان صحة وراحة كلبك الدائمة.</p>
+                <span class="السعر">20$ / الجلسة</span>
+            </div>
 
-</div>
-</section>
+        </div>
+    </section>
+</main>
 
-<div style="text-align:center; margin-top:40px;">
-<a href="booking.html" class="btn-main">احجز الآن</a>
+<footer class="التذييل-الرئيسي">
+    <div class="إطار-المحتوى">
+        <div class="روابط-التواصل">
+    <a href="https://www.facebook.com/LovingHomes" target="_blank" class="فيسبوك">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    
+    <a href="https://www.instagram.com/LovingHomes" target="_blank" class="إنستغرام">
+        <i class="fab fa-instagram"></i>
+    </a>
+    
+    <a href="https://wa.me/962700000000" target="_blank" class="واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </div>
-
-<footer class="main-footer">
-<div class="container">
-<div class="social-links">
-<a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
-<a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-<a href="https://wa.me/yournumber" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-</div>
-<p>© 2026 فندق Loving Homes - جميع الحقوق محفوظة</p>
-</div>
+        <p>© 2026 فندق Loving Homes - جميع الحقوق محفوظة لجمال أليفك</p>
+    </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

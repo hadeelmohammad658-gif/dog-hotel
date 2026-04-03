@@ -1,28 +1,41 @@
-// script.js
+let fontSize = 100;
 
-// حرك البطاقات عند المرور بالماوس
+function changeFontSize(action) {
+    if (action === 'increase' && fontSize < 150) fontSize += 10;
+    else if (action === 'decrease' && fontSize > 70) fontSize -= 10;
+    document.body.style.fontSize = fontSize + "%";
+}
+
+function speakText() {
+    const text = document.body.innerText;
+    if (!window.speechSynthesis.speaking) {
+        const speech = new SpeechSynthesisUtterance(text);
+        speech.lang = 'ar-SA';
+        window.speechSynthesis.speak(speech);
+    }
+}
+
+// ✅ هاي الدالة كانت ناقصة
+function stopSpeaking() {
+    if (window.speechSynthesis.speaking) {
+        window.speechSynthesis.cancel();
+    }
+}
+
+// رسالة الترحيب
+if (window.location.pathname.includes("index.html") || window.location.pathname === "/") {
+    setTimeout(() => {
+        alert("🐾 أهلاً بك في Loving Homes 🐾");
+    }, 800);
+}
+
+// زر المنيو
 document.addEventListener('DOMContentLoaded', () => {
-  const cards = document.querySelectorAll('.price-card, .card');
-
-  cards.forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left; // موقع الماوس داخل البطاقة
-      const y = e.clientY - rect.top;
-
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
-
-      const rotateX = ((y - centerY) / centerY) * 10; // زاوية ميلان X
-      const rotateY = ((x - centerX) / centerX) * -10; // زاوية ميلان Y
-
-      card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
-      card.style.boxShadow = `${-rotateY*2}px ${rotateX*2}px 20px rgba(0,0,0,0.2)`;
-    });
-
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = `rotateX(0deg) rotateY(0deg) scale(1)`;
-      card.style.boxShadow = `0 10px 20px rgba(0,0,0,0.05)`;
-    });
-  });
+    const btn = document.getElementById('hamburger-btn');
+    const menu = document.querySelector('.قائمةالتنقل');
+    if (btn && menu) {
+        btn.onclick = function() {
+            menu.classList.toggle('نشطة'); 
+        };
+    }
 });

@@ -1,93 +1,111 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>المراعي والأنشطة الخارجية | Loving Homes</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المراعي والأنشطة الخارجية | لوفينغ هومز - Loving Homes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-<header class="main-header">
-<div class="container">
-<a href="index.html" class="logo">Loving <span>Homes</span></a>
-<nav>
-<ul>
-<li><a href="index.html">الرئيسية</a></li>
-<li><a href="rooms.html">الغرف</a></li>
-<li><a href="grooming.html">الحلاقة والمنتجع</a></li>
-<li><a href="vet.html">الخدمات البيطرية</a></li>
-<li><a href="activities.html">الأنشطة الخارجية</a></li>
-<li><a href="packages.html">الحزم</a></li>
-<li><a href="contact.html">اتصل بنا</a></li>
-</ul>
-</nav>
-  <div class="nav-tools">
-    <button onclick="changeFontSize('increase')" title="تكبير الخط">A+</button>
-    <button onclick="changeFontSize('decrease')" title="تصغير الخط">A-</button>
-    <button onclick="speakText()" title="قراءة النص"><i class="fas fa-volume-up"></i></button>
-    <button onclick="stopSpeaking()" title="كتم الصوت" style="color: #e74c3c; border-color: #e74c3c;">
-        <i class="fas fa-volume-mute"></i>
-    </button>
+<header class="الرئيسي">
+    <div class="إطارالمحتوى">
+        <a href="index.html" class="الشعار">Loving <span>Homes</span></a>
+        <nav>
+            <ul class="قائمةالتنقل">
+                <li><a href="index.html" class="رابط-نشط">الرئيسية</a></li>
+                <li><a href="rooms.html">الغرف</a></li>
+                <li><a href="grooming.html">الحلاقة والمنتجع</a></li>
+                <li><a href="vet.html">الخدمات البيطرية</a></li>
+                <li><a href="activities.html">الأنشطة الخارجية</a></li>
+                <li><a href="packages.html">الحزم</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+            <div class="أيقونةالهاتف" id="hamburger-btn"> ☰ </div>            
 
-</div>
+            
+            <div class="أدوات-الوصول">
+                <button onclick="changeFontSize('increase')" title="تكبير">A+</button>
+                <button onclick="changeFontSize('decrease')" title="تصغير">A-</button>
+                <button onclick="speakText()" title="استمع"><i class="fas fa-volume-up"></i></button>
+                <button onclick="stopSpeaking()" title="كتم"><i class="fas fa-volume-mute"></i></button>
+            </div>
+        </nav>
+    </div>
 </header>
 
-<section class="page-header">
-<h1>المراعي والأنشطة الخارجية</h1>
-<p>مساحات خارجية آمنة وأنشطة ممتعة للكلاب</p>
-</section>
+<main>
+    <section class="عنوان-الصفحة">
+        <h1>المراعي والأنشطة الخارجية</h1>
+        <p>مساحات خضراء آمنة ومغامرات ممتعة لأصدقائنا الأوفياء</p>
+    </section>
 
-<section class="services container">
-<div class="grid">
+    <section class="الخدمات ">
+        <div class="شبكة-العرض">
 
-<div class="card">
-<img src="C:\Users\User\Desktop\Hadeel Mohamad_تطوير مواقع الويب\images\Screenshot 2026-03-11 114457.png">
-<h3>المراعي الخارجية</h3>
-<p>مساحات خضراء واسعة وآمنة تسمح للكلاب باللعب بحرية في الهواء الطلق.</p>
-<p><strong>السعر: 20$ / اليوم</strong></p>
-</div>
+            <div class="بطاقة-خدمة">
+                <div class="إطار-الصورة">
+                    <img src="images/Screenshot 2026-03-11 114457.png" alt="المراعي الخارجية">
+                </div>
+                <h3>المراعي الخارجية</h3>
+                <p>مساحات خضراء واسعة وآمنة تسمح للكلاب باللعب بحرية في الهواء الطلق.</p>
+                <span class="السعر">20$ / اليوم</span>
+            </div>
 
-<div class="card">
-<img src="C:\Users\User\Desktop\Hadeel Mohamad_تطوير مواقع الويب\images\Screenshot 2026-03-11 114754.png">
-<h3>المشي في الغابات</h3>
-<p>نزهات يومية في مسارات طبيعية بإشراف المدربين، لتحفيز النشاط البدني.</p>
-<p><strong>السعر: 15$ / الجولة</strong></p>
-</div>
+            <div class="بطاقة-خدمة">
+                <div class="إطار-الصورة">
+                    <img src="images/Screenshot 2026-03-11 114754.png" alt="المشي في الغابات">
+                </div>
+                <h3>المشي في الغابات</h3>
+                <p>نزهات يومية في مسارات طبيعية بإشراف مدربين مختصين لتحفيز النشاط.</p>
+                <span class="السعر">15$ / الجولة</span>
+            </div>
 
-<div class="card">
-<img src="C:\Users\User\Desktop\Hadeel Mohamad_تطوير مواقع الويب\images\Screenshot 2026-03-11 114243.png">
-<h3>منطقة العشب الخاصة</h3>
-<p>مساحة عشب خاصة ومجهزة ليستمتع الكلاب باللعب والجري بأمان.</p>
-<p><strong>السعر: 25$ / اليوم</strong></p>
-</div>
+            <div class="بطاقة-خدمة">
+                <div class="إطار-الصورة">
+                    <img src="images/Screenshot 2026-03-11 114243.png" alt="منطقة العشب الخاصة">
+                </div>
+                <h3>منطقة العشب الخاصة</h3>
+                <p>مساحة عشب مجهزة بالكامل ليستمتع الكلب بالجري واللعب بخصوصية تامة.</p>
+                <span class="السعر">25$ / اليوم</span>
+            </div>
 
-<div class="card">
-<img src="C:\Users\User\Desktop\Hadeel Mohamad_تطوير مواقع الويب\images\Screenshot 2026-03-11 114546.png">
-<h3>مسار الرشاقة</h3>
-<p>مسار تدريب خاص لتحسين النشاط البدني والمهارات الحركية للكلاب.</p>
-<p><strong>السعر: 30$ / الجلسة</strong></p>
-</div>
+            <div class="بطاقة-خدمة">
+                <div class="إطار-الصورة">
+                    <img src="images/Screenshot 2026-03-11 114546.png" alt="مسار الرشاقة">
+                </div>
+                <h3>مسار الرشاقة (Agility)</h3>
+                <p>تدريبات مخصصة لتحسين المهارات الحركية والذكاء البدني للكلاب.</p>
+                <span class="السعر">30$ / الجلسة</span>
+            </div>
 
-</div>
-</section>
+        </div>
+    </section>
 
-<div style="text-align:center; margin-top:40px;">
-<a href="booking.html" class="btn-main">احجز الآن</a>
-</div>
+    
+</main>
 
-<footer class="main-footer">
-<div class="container">
-<div class="social-links">
-<a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
-<a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-<a href="https://wa.me/yournumber" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+<footer class="التذييل-الرئيسي">
+    <div class="إطار-المحتوى">
+      <div class="روابط-التواصل">
+    <a href="https://www.facebook.com/LovingHomes" target="_blank" class="فيسبوك">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    
+    <a href="https://www.instagram.com/LovingHomes" target="_blank" class="إنستغرام">
+        <i class="fab fa-instagram"></i>
+    </a>
+    
+    <a href="https://wa.me/962700000000" target="_blank" class="واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </div>
-<p>© 2026 فندق Loving Homes - جميع الحقوق محفوظة</p>
-</div>
+        <p>© 2026 فندق Loving Homes - جميع الحقوق محفوظة لراحة أليفك</p>
+    </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

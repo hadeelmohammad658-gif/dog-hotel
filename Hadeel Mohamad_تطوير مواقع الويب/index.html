@@ -3,106 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loving Homes | فندق الكلاب الاحترافي</title>
+    <title>لوفينغ هومز | Loving Homes - فندق الكلاب الاحترافي</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="container">
-            <a href="index.html" class="logo">Loving <span>Homes</span></a>
+   <header class="الرئيسي">
+    <div class="إطارالمحتوى">
+        <a href="index.html" class="الشعار">Loving <span>Homes</span></a>
             
-            <nav>
-                <ul>
-                    <li><a href="index.html" style="color: #e67e22;">الرئيسية</a></li>
-                    <li><a href="rooms.html">الغرف</a></li>
-                    <li><a href="grooming.html">الحلاقة والمنتجع</a></li>
-                    <li><a href="vet.html">الخدمات البيطرية</a></li>
-                    <li><a href="activities.html">الأنشطة الخارجية</a></li>
-                    <li><a href="packages.html">الحزم</a></li>
-                    <li><a href="contact.html">اتصل بنا</a></li>
-                </ul>
-
-                <div class="nav-tools">
-                    <button onclick="changeFontSize('increase')" title="تكبير">A+</button>
-                    <button onclick="changeFontSize('decrease')" title="تصغير">A-</button>
-                    <button onclick="speakText()" title="استمع"><i class="fas fa-volume-up"></i></button>
-                    <button onclick="stopSpeaking()" title="كتم"><i class="fas fa-volume-mute"></i></button>
-                    <select id="lang-switch" onchange="switchLanguage()">
-                        <option value="ar">AR</option>
-                        <option value="en">EN</option>
-                    </select>
-                </div>
-            </nav>
+             <nav>
+            <ul class="قائمةالتنقل">
+                <li><a href="index.html" class="رابط-نشط">الرئيسية</a></li>
+                <li><a href="rooms.html">الغرف</a></li>
+                <li><a href="grooming.html">الحلاقة والمنتجع</a></li>
+                <li><a href="vet.html">الخدمات البيطرية</a></li>
+                <li><a href="activities.html">الأنشطة الخارجية</a></li>
+                <li><a href="packages.html">الحزم</a></li>
+                <li><a href="contact.html">اتصل بنا</a></li>
+            </ul>
+               <div class="أيقونةالهاتف" id="hamburger-btn"> ☰ </div>            
+           <div class="أدوات-الوصول">
+                <button onclick="changeFontSize('increase')" title="تكبير">A+</button>
+                <button onclick="changeFontSize('decrease')" title="تصغير">A-</button>
+                <button onclick="speakText()" title="استمع"><i class="fas fa-volume-up"></i></button>
+                <button onclick="stopSpeaking()" title="كتم"><i class="fas fa-volume-mute"></i></button>
+            </div>
+        </nav>
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>منزلهم الثاني في قلب هونج كونج</h1>
-            <p>رفاهية، أمان، وحب لا ينتهي لأليفك المفضّل.</p>
-            <div class="hero-btns">
-                <a href="packages.html" class="btn-main">شاهد الحزم والأسعار</a>
-                <a href="booking.html" class="btn-secondary">احجز إقامة الآن</a>
+    <main>
+        <section id="الرئيسية" class="قسم-البانر">
+            <div class="محتوى-البانر">
+                <h1>منزلهم الثاني في قلب هونج كونج</h1>
+                <p>رفاهية، أمان، وحب لا ينتهي لأليفك المفضّل.</p>
             </div>
-        </div>
-    </section>
 
-    <section class="quick-features">
-        <div class="container">
-            <div class="grid">
-                <div class="card">
-                    <i class="fas fa-shield-alt fa-2x" style="color: #e67e22; margin-bottom: 15px;"></i>
-                    <h3>رعاية 24/7</h3>
-                    <p>فريقنا متواجد دائماً لضمان سلامة وسعادة كلبك في كل لحظة.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-video fa-2x" style="color: #e67e22; margin-bottom: 15px;"></i>
-                    <h3>أمان تام</h3>
-                    <p>كاميرات مراقبة متطورة وبيئة مخصصة بالكامل ومحمية.</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-heart fa-2x" style="color: #e67e22; margin-bottom: 15px;"></i>
-                    <h3>حب ودلال</h3>
-                    <p>نتعامل مع كل كلب كأنه فرد من عائلتنا مع الكثير من الاهتمام.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="about-section container">
-        <div class="about-grid">
-            <div class="about-text">
-                <h2>نبذة عن لوفينغ هومز</h2>
-                <p>نحن في <strong>لوفينغ هومز (Loving Homes)</strong> نؤمن بأن الكلاب تستحق الأفضل. نقدم مرافق عالمية المستوى تشمل الغرف المكيفة، مسارات الرشاقة، ومناطق اللعب الرملية.</p>
-                <ul class="check-list">
-                    <li><i class="fas fa-check-circle"></i> وجبات غذائية طازجة ومخصصة.</li>
-                    <li><i class="fas fa-check-circle"></i> مساحات خارجية خضراء شاسعة.</li>
-                    <li><i class="fas fa-check-circle"></i> فريق مدرب على الإسعافات الأولية.</li>
-                </ul>
-                <a href="rooms.html" class="btn-main" style="margin-top: 20px;">اكتشف مرافقنا</a>
-            </div>
-            <div class="about-video">
-                <div class="video-container">
-                    <video width="100%" height="auto" controls autoplay muted loop poster="images/video-placeholder.jpg">
-                        <source src="videoplayback.mp4" type="video/mp4">
-                        متصفحك لا يدعم تشغيل الفيديو.
-                    </video>
+        <section class="ميزات-سريعة">
+            <div class="إطار-المحتوى">
+                <div class="شبكة-العرض">
+                    <div class="بطاقة-ميزة">
+                        <h3>رعاية 24/7</h3>
+                        <p>فريقنا متواجد دائماً لضمان سلامة وسعادة كلبك في كل لحظة.</p>
+                    </div>
+                    <div class="بطاقة-ميزة">
+                        <h3>أمان تام</h3>
+                        <p>كاميرات مراقبة متطورة وبيئة مخصصة بالكامل ومحمية.</p>
+                    </div>
+                    <div class="بطاقة-ميزة">
+                        <h3>حب ودلال</h3>
+                        <p>نتعامل مع كل كلب كأنه فرد من عائلتنا مع الكثير من الاهتمام.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="main-footer">
-        <div class="container">
-            <div class="social-links">
-                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <section class="قسم-من-نحن ">
+            <div class="شبكة-التفاصيل">
+                <div class="نص-من-نحن">
+                    <h2>نبذة عن لوفينغ هومز</h2>
+                    <p>نحن في <strong>لوفينغ هومز (Loving Homes)</strong> نؤمن بأن الكلاب تستحق الأفضل. نقدم مرافق عالمية المستوى تشمل الغرف المكيفة، مسارات الرشاقة، ومناطق اللعب الرملية.</p>
+                    <ul class="قائمة-المزايا">
+                        <li><i class="fas fa-check-circle"></i> وجبات غذائية طازجة ومخصصة.</li>
+                        <li><i class="fas fa-check-circle"></i> مساحات خارجية خضراء شاسعة.</li>
+                        <li><i class="fas fa-check-circle"></i> فريق مدرب على الإسعافات الأولية.</li>
+                    </ul>
+                    <a href="rooms.html" class="زر-رئيسي" style="margin-top: 20px;">اكتشف مرافقنا</a>
+                </div>
+                <div class="فيديو-تعريفي">
+                    <div class="الفيديو">
+                        <video width="100%" height="auto" controls autoplay muted loop poster="images/video-placeholder.jpg">
+                            <source src="video/videoplayback.mp4" type="video/mp4">
+                            متصفحك لا يدعم تشغيل الفيديو.
+                        </video>
+                    </div>
+                </div>
             </div>
-            <p>&copy; 2026 فندق لوفينغ هومز - هونج كونج. جميع الحقوق محفوظة.</p>
+        </section>
+    </main>
+
+    <footer class="التذييل-الرئيسي">
+        <div class="إطار-المحتوى">
+<div class="روابط-التواصل">
+    <a href="https://www.facebook.com/LovingHomes" target="_blank" class="فيسبوك">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    
+    <a href="https://www.instagram.com/LovingHomes" target="_blank" class="إنستغرام">
+        <i class="fab fa-instagram"></i>
+    </a>
+    
+    <a href="https://wa.me/962700000000" target="_blank" class="واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+            <p>© 2026 فندق Loving Homes - جميع الحقوق محفوظة لراحة أليفك</p>
         </div>
     </footer>
 
